@@ -3,13 +3,13 @@
 {% block content %}
 
     <div id="home" class="banner-area section-padding">
-        <div class="bg-overlay black"></div>
+        <div class="bg-overlay "></div>
         <div class="containter">
             <div class="row">
                 <div class="col-md-12">
                     <div class="welcome-text">
                         <div class="name-area wow fadeInDown" data-wow-delay="0.2s">Hello, my name is Jadiel  Mwangi Muriithi</div>
-                        <h1 class="wow fadeInDown" data-wow-delay="0.4s">FULLSTACK SOFTWARE DEVELOPER</h1>
+                        <h1 class="wow fadeInDown" data-wow-delay="0.4s"> CERTIFIED FULLSTACK SOFTWARE DEVELOPER</h1>
                         <a href="#about" class="my-btn-1 wow fadeInDown" data-wow-delay="0.6s">About Me</a>
                         <a href="#contact" class="my-btn-2 wow fadeInDown" data-wow-delay="0.8s">Contact Me</a>
                     </div>
@@ -23,7 +23,7 @@
     <div id="about" class="about-area section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sn-8 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="col-md-8 col-sn-8 col-xs-12 wow fadeInLeft" data-wow-delay="0.9s">
                     <div class="about-left">
                         <h2 class="section-title">About Me</h2>
                         <div class="line"></div>
@@ -34,14 +34,17 @@
                 </div>
                 <div class="col-md-4 visible-md visible-lg wow fadeInDown" data-wow-delay="0.6s">
                     <div class="profile">
-                        <img src="{{ about.image.url }}" alt="Profile image"  class="img-responsive">
+                        <!-- <img src="{{ about.image.url }}" alt="Profile image"  class="img-responsive"> -->
+
+                        <br><img src="static/image/IMG_20200413_180308.jpg" alt="Profile image"  class="img-responsive">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    {#    Services Section#}
+    <!-- {#    Services Section#}
     <div id="services" class="section-padding">
         <div class="container">
             <div class="row">
@@ -60,13 +63,12 @@
                                 <img src="{{ service.image.url }}" alt="work image">
                             
                             <h2>{{ service.name }}</h2>
-                            <!-- <p>{{ service.description }}</p> -->
                         </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
-    </div>
+    </div> -->
 
     <hr>
     {#    Recent Works Section#}
@@ -75,7 +77,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-header">
-                        <h2>My Recent Works</h2>
+                        <h2>My Recent projects</h2>
                     </div>
                 </div>
             </div>
@@ -131,10 +133,55 @@
                     <h6><a href="https://github.com/jadielmwangi"><img src="https://jamisonmercurio.com/Github1.png"></a></h6>
                     
                 </div>
+
+
                 <div class="col-md-4">
                     <div class="text-center">
-                        <h6> Phone: (+254) 727 867 684</h6>
-                        <h6>Email: jedielmwangi@gmail.com</h6>
+                        
+
+                        <form id="contact-form" method="post" action="#">
+
+                            <div class="messages"></div>
+    
+                            <div class="controls">
+    
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group wow fadeInDown" data-wow-delay="0.2s">
+                                            <input id="form_name" type="text" name="name" class="form-control"
+                                                   placeholder="Enter your full name *" required="required"
+                                                   data-error="Fullname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group wow fadeInDown" data-wow-delay="0.4s">
+                                            <input id="form_email" type="email" name="email" class="form-control"
+                                                   placeholder="Enter your email *" required="required"
+                                                   data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group wow fadeInUp" data-wow-delay="0.6s">
+                                            <textarea id="form_message" name="message" class="form-control"
+                                                      placeholder="Your Message *" rows="3" required="required"
+                                                      data-error="write a message for me"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary" value="">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </form>
+    
+
+
 
                     </div>
                     
