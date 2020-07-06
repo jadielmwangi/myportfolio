@@ -1,9 +1,15 @@
-# from django.urls import url
-from django.conf.urls import url
+# from django.conf.urls import url
 
+# from .views import HomeTemplateView
+
+
+# urlpatterns = [
+#     url('', HomeTemplateView.as_view()),
+# ]
+
+from django.urls import path
 from .views import HomeTemplateView
 
-
 urlpatterns = [
-    url('', HomeTemplateView.as_view()),
+    path('', HomeTemplateView.as_view()),
 ]
