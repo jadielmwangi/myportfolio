@@ -137,6 +137,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
 
+
             ],
         },
     },
@@ -222,4 +223,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Configure Django App for Heroku.
-django_heroku.settings(locals())
+django_heroku.settings(locals()) 
